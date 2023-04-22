@@ -95,5 +95,5 @@ Prepare the buildx context and use it:
 
 Then build for multiple platforms:
 
-* `docker buildx build --push --platform linux/arm64,linux/amd64 --tag zjdaniels1985/activemq:5.18.0 .`
+* `docker buildx build --push --platform linux/arm64,linux/amd64 --tag zjdaniels1985/activemq:5.18.1 .`
 * `docker buildx build --push --platform linux/arm64,linux/amd64 --tag zjdaniels1985/activemq:latest .`
