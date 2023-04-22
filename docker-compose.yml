@@ -1,0 +1,20 @@
+services:
+  activemq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zjdaniels1985/activemq:latest
+    container_name: activemq
+    environment:
+      - ACTIVEMQ_DISALLOW_WEBCONSOLE=false
+      - ACTIVEMQ_USERNAME=system
+      - ACTIVEMQ_PASSWORD=manager
+      - ACTIVEMQ_WEBADMIN_USERNAME=admin
+      - ACTIVEMQ_WEBADMIN_PASSWORD=admin
+    ports:
+      - "61616:61616"
+      - "61613:61613"
+      - "61614:61614"
+      - "5672:5672"
+      - "1883:1883"
+      - "8161:8161"
